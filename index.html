@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>Ghumakkad Touristers</title>
+        <style>
+            .header{
+                height: 80px;
+                width: 100%;
+                background-color:  orangered;
+                color: white;     
+                font-size: 25px;
+                margin-top: -20px;
+                font-family: monospace;
+            }    
+            .header h1{
+                padding-top: 15px;
+                padding-left: 20px;
+            }
+            .menu a{
+                padding: 15px;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .menu a:hover{
+                color: orangered;
+            }
+            .menu{
+                height: 25px;
+                width: 100%;
+                background-color: green;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .body{
+                height: 500px;
+                width: 100%; 
+            }
+            .body img{
+                height: 500px;
+                width: 100%;      
+            }
+            .lko{
+                height: 500px;
+                width: 100%;
+                background-color: white;
+                margin-top: -80px;
+            } 
+            .lko img{
+                height: 250px;
+                width: 40%; 
+                display: block;
+            }
+            .lko p{
+                font-size: 18px;
+                text-align: center;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .cat{
+                height: 700px;
+                width: 100%;                          
+            } 
+            .cat a{
+                text-decoration: none;
+            }
+            .cat img{
+                height: 250px;
+                width: 80%; 
+                padding-top: 20px;
+            }
+            .footer{
+                height: 50px;
+                width: 100%;
+                background-color: #333333;
+                color: white;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Ghumakkad Touristers</h1>
+        </div>
+        <div class="menu">            
+            <a href="index.html">Home</a>
+            <a href="#">Discount Trips</a>
+            <a href="#">Hotels</a>
+            <a href="sites.html">Holiday Sites</a>
+            <a href="#">Contact Us</a>
+            <a href="abtus.html">About Us</a>
+        </div>
+        <div class="body">
+
+            <table width="100%" align="center">
+                <tr>
+                    <td>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <img src="1.jpg" >
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="2.jpg" >
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="3.jpg" >
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                        </div>
+
+                        <script>
+                            var slideIndex = 0;
+                            showSlides();
+
+                            function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {
+                                    slideIndex = 1
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                                setTimeout(showSlides, 2000);
+                            }
+                        </script>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="lko">
+            <center><img src='lko.jpg'>
+                <p>Lucknow is the capital and largest city of the Indian state of Uttar Pradesh and is also the administrative headquarters of the eponymous District and Division. It is the eleventh most populous city and the twelfth most populous urban agglomeration of India. Lucknow has always been known as a multicultural city that flourished as a North Indian cultural and artistic hub, and the seat of power of Nawabs in the 18th and 19th centuries. It continues to be an important centre of governance, administration, education, commerce, aerospace, finance, pharmaceuticals, technology, design, culture, <b>tourism</b>, music and poetry.The city stands at an elevation of approximately 123 metres (404 ft) above sea level. Lucknow district covers an area of 2,528 square kilometres (976 sq mi). Bounded on the east by Barabanki, on the west by Unnao, on the south by Raebareli and in the north by Sitapur and Hardoi, Lucknow sits on the northwestern shore of the Gomti River. Hindi is the main language of the city and Urdu is also widely spoken. Lucknow is the centre of Shia Islam in India with the highest Shia Muslim population in India. Historically, Lucknow was the capital of the Awadh region, controlled by the Delhi Sultanate and later the Mughal Empire. It was transferred to the Nawabs of Awadh. In 1856, the British East India Company abolished local rule and took complete control of the city along with the rest of Awadh and, in 1857, transferred it to the British Raj. Along with the rest of India, Lucknow became independent from Britain on 15 August 1947. It has been listed as the 17th fastest growing city in India and 74th in the world.</p></center>
+        </div>
+        <h2></h2>
+        <div class="cat">
+            <center>
+                <div class="one" style="float:left; height: 350px; width: 33.3%; ">
+                    <a href="imambara.html"><img src="a.webp">
+                    <h3>I M A M B A R A</h3></a>
+                </div>
+                <div class="two" style="float:left; height: 350px; width: 33.3%; ">
+                    <a href="residency.html"><img src="b.jpg">
+                    <h3>R E S I D E N C Y</h3></a>
+                </div>
+                <div class="three" style="float:right; height: 350px; width: 33.3%; ">
+                    <a href="janeshwar.html"><img src="c.jpg">
+                    <h3>J A N E S W A R</h3></a>
+                </div>
+                <div class="one" style="float:left; height: 350px; width: 33.3%; ">
+                    <a href="river.html"><img src="d.jpg">
+                    <h3>R I V E R &nbsp;  F R O N T</h3></a>
+                </div>
+                <div class="two" style="float:left; height: 350px; width: 33.3%; ">
+                    <a href="setu.html"><img src="e.jpg">
+                    <h3>H A N U M A N &nbsp;  S E T U</h3></a>
+                </div>
+                <div class="three" style="float:right; height: 350px; width: 33.3%; ">
+                    <a href="zoo.html"><img src="f.jpg">
+                    <h3>L U C K N O W &nbsp;  Z O O</h3></a>
+                </div>
+            </center>
+        </div>
+        <div class="footer">
+            <center><p>All Rights Reserved  Copyright &copy; Ghumakkad Touristers </p></center>
+        </div>
+    </body>
+</html>
